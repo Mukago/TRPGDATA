@@ -1,0 +1,5 @@
+--DROP TABLE M_TRPG;
+CREATE TABLE M_TRPG(
+    TRPG_RYAKU    varchar(100),
+    TRPG_NAME    varchar(100)
+);
