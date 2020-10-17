@@ -1,6 +1,6 @@
 DROP	TABLE TRPG_FTR.M_FTR_アクション;
 CREATE	TABLE TRPG_FTR.M_FTR_アクション(
-,	"ルールID"			varchar(10)			NOT NULL
+	"ルールID"			varchar(10)			NOT NULL
 ,	"クラス"			varchar(20)			NOT NULL
 ,	"名称"				varchar(1000)		NOT NULL
 ,	"使用タイミング"	varchar(10)
