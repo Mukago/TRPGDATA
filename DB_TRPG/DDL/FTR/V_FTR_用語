@@ -1,0 +1,6 @@
+CREATE VIEW TRPG_FTR.V_FTR_用語 AS(
+	SELECT
+		*
+	FROM
+		TRPG_FTR.M_FTR_用語
+);
