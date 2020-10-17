@@ -3,9 +3,13 @@ CREATE	VIEW TRPG_FTR.V_FTR_背景 AS(
 	SELECT
 		A.職種
 	,	B.*
-    FROM
-        TRPG_FTR.M_FTR_クラス AS A
-    LEFT OUTER JOIN
-        TRPG_FTR.M_FTR_背景 AS  B
-        ON    A.クラス=B.クラス
+	FROM
+		TRPG_FTR.M_FTR_クラス	A
+	LEFT OUTER JOIN
+		TRPG_FTR.M_FTR_背景		B
+		ON	A.クラス = B.クラス
+	ORDER BY
+		A.職種
+	,	B.クラス
+	,	B.背景
 );
