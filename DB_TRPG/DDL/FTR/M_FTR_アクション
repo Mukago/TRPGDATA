@@ -1,12 +1,12 @@
 DROP	TABLE TRPG_FTR.M_FTR_アクション;
 CREATE	TABLE TRPG_FTR.M_FTR_アクション(
-	"ルールID"			varchar(10)			NOT NULL
-,	"クラス"			varchar(20)			NOT NULL
-,	"名称"				varchar(1000)		NOT NULL
-,	"使用タイミング"	varchar(10)
-,	"使用条件"			varchar(100)
-,	"コスト"			varchar(10)
-,	"残回数"			varchar(10)
-,	"効果"				varchar(500)		NOT NULL
+	"クラス"            varchar(20)		NOT NULL
+,	"名称"                varchar(1000)	NOT NULL
+,	"使用タイミング"    varchar(10)
+,	"使用条件"            varchar(100)
+,	"コスト"            varchar(10)
+,	"残回数"            varchar(10)
+,	"効果"                varchar(500)	NOT NULL
+,	"ルールID"            varchar(10)	NOT NULL
 ,	PRIMARY KEY ("ルールID","クラス","名称")
 );
