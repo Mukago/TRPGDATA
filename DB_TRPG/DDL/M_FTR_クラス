@@ -1,0 +1,10 @@
+DROP	TABLE TRPG_FTR.M_FTR_クラス;
+CREATE	TABLE TRPG_FTR.M_FTR_クラス(
+	"ルールID"		varchar(20)		NOT NULL
+,	"職種"			varchar(100)	NOT NULL
+,	"クラス"		varchar(100)	NOT NULL 
+,	"背景"			varchar(100)	NOT NULL 
+,	"使用フラグ"	numeric(1)
+,	PRIMARY KEY ("ルールID","職種","クラス","背景")
+);
+

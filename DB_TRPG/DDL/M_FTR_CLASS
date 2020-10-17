@@ -1,7 +1,0 @@
-CREATE TABLE TRPG_FTR.M_FTR_CLASS(
-    RULE_ID     varchar(20)    NOT NULL
-,   KBN         varchar(100)   NOT NULL
-,   NAME        varchar(100)   NOT NULL 
-,   FLG_USE     numeric(1)
-,   PRIMARY KEY (RULE_ID,KBN,NAME)
-);
