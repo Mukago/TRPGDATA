@@ -1,6 +1,6 @@
 DROP	TABLE TRPG_FTR.M_FTR_用語;
 CREATE	TABLE TRPG_FTR.M_FTR_用語(
 	"用語"		varchar(100)		NOT NULL
-,	"内容" 		varchar(1000)		NOT NULL
+,	"内容" 		varchar(1000)
 ,	PRIMARY KEY ("用語")
 );
