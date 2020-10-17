@@ -1,0 +1,8 @@
+DROP	TABLE TRPG_COMMON.M_TRPGルール;
+CREATE	TABLE TRPG_COMMON.M_TRPG_ルール(
+	TRPG			varchar(10)		NOT NULL
+,	"ルールID" 		varchar(20)		NOT NULL
+,	"ルール名称"	varchar(100)	NOT NULL
+,	"使用フラグ"	numeric(1)
+,	PRIMARY KEY (TRPG,"ルールID")
+);
