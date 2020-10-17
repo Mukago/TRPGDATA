@@ -1,0 +1,11 @@
+DROP	VIEW TRPG_FTR.V_FTR_クラス;
+CREATE	VIEW TRPG_FTR.V_FTR_クラス AS(
+	SELECT
+		*
+	FROM
+		TRPG_FTR.M_FTR_クラス A
+	ORDER BY
+		A.ルール
+	,	A.職種
+	,	A.クラス
+);
