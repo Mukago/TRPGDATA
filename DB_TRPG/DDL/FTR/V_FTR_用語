@@ -4,7 +4,7 @@ CREATE	VIEW TRPG_FTR.V_FTR_用語 AS(
 		A.用語
 	,	REGEXP_REPLACE(concat_ws(E'\r\n'
 		,   A.内容
-		),'[\(\)"]','','ig')
+		),'[\(\)"]','','ig') AS 内容
 	FROM
 		TRPG_FTR.M_FTR_用語 A
 	ORDER BY
