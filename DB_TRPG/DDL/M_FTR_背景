@@ -1,6 +1,7 @@
 DROP	TABLE TRPG_FTR.M_FTR_背景;
 CREATE	TABLE TRPG_FTR.M_FTR_背景(
-	"クラス"		varchar(40)	NOT NULL
+	"ルールID"			varchar(10)			NOT NULL
+,	"クラス"		varchar(40)	NOT NULL
 ,	"背景"			varchar(100)	NOT NULL 
-,	PRIMARY KEY ("クラス","背景")
+,	PRIMARY KEY ("ルールID","クラス","背景")
 );
