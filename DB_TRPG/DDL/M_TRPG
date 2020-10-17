@@ -1,6 +1,6 @@
---DROP TABLE M_TRPG;
+DROP TABLE M_TRPG;
 CREATE TABLE M_TRPG(
-    TRPG_RYAKU    varchar(100)
-,   TRPG_NAME    varchar(100)
-,	USE_FLG		numeric(1)
+    TRPG_RYAKU  varchar(100)
+,   TRPG_NAME   varchar(100)
+,   FLG_USE     numeric(1)
 );
