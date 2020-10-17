@@ -1,0 +1,6 @@
+CREATE VIEW V_FTR_クラス AS(
+	SELECT
+		*
+	FROM
+		M_FTR_クラス
+);
