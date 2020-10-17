@@ -8,7 +8,6 @@ CREATE	TABLE TRPG_FTR.M_FTR_クラス(
 ,	"人間"  		numeric(1)
 ,	"肉体"  		numeric(1)
 ,	"固定"  		varchar(100)
-,	"使用フラグ"	numeric(1)
 ,	"ルールID"		varchar(20)		NOT NULL
 ,	PRIMARY KEY ("ルールID","職種","クラス")
 );
