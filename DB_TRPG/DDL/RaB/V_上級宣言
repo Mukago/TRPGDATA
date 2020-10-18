@@ -1,0 +1,10 @@
+DROP	VIEW TRPG_RAB.V_上級宣言;
+CREATE	VIEW TRPG_RAB.V_上級宣言 AS(
+	SELECT
+		A.*
+	FROM
+		TRPG_RAB.M_上級宣言 A
+	ORDER BY
+		A.系譜
+	,	A.上級宣言
+);
