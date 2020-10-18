@@ -1,0 +1,9 @@
+DROP	VIEW TRPG_RAB.V_系譜;
+CREATE	VIEW TRPG_RAB.V_系譜 AS(
+	SELECT
+		A.*
+	FROM
+		TRPG_RAB.M_系譜 A
+	ORDER BY
+		A.系譜
+);
