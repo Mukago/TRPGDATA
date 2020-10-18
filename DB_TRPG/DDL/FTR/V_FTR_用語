@@ -1,12 +1,6 @@
 DROP	VIEW TRPG_FTR.V_FTR_用語;
 CREATE	VIEW TRPG_FTR.V_FTR_用語 AS(
-	SELECT
-		A.用語
-	,	REGEXP_REPLACE(concat_ws(E'\r\n'
-		,   A.内容
-		),'[\(\)"]','','ig') AS 内容
-	FROM
-		TRPG_FTR.M_FTR_用語 A
-	ORDER BY
-		A.用語
+	SELECT * FROM TRPG_FTR.M_FTR_用語 A
+	UNION ALL
+	SELECT * FROM TRPG_FTR.V_FTR_用語_アクション B
 );
