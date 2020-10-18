@@ -1,6 +1,13 @@
 DROP	TABLE TRPG_RAB.M_系譜;
 CREATE	TABLE TRPG_RAB.M_系譜(
 	"系譜"			varchar(20)		NOT	NULL
+,	"初期権限1"		varchar(20)
+,	"初期権限2"		varchar(20)
+,	"初期権限3"		varchar(20)
+,	"初期権限4"		varchar(20)
+,	"初期体系1"		varchar(20)
+,	"初期体系2"		varchar(20)
+,	"初期体系3"		varchar(20)
 ,	"ルール"		varchar(10)		NOT	NULL
 ,	PRIMARY	KEY ("ルール","系譜")
 )
