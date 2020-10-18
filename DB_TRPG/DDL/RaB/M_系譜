@@ -1,0 +1,6 @@
+DROP	TABLE M_系譜;
+CREATE	TABLE M_系譜(
+	"系譜"			varchar(20)		NOT	NULL
+,	"ルール"		varchar(10)		NOT	NULL
+,	PRIMARY	KEY ("ルール","系譜")
+)
