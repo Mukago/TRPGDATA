@@ -1,0 +1,13 @@
+DROP	VIEW TRPG_FTR.V_FTR_アクション_用語;
+CREATE	VIEW TRPG_FTR.V_FTR_アクション_用語 AS(
+	SELECT
+		A.名称	AS 用語
+	,	concat(
+			E'\r\n使用条件：', A.使用タイミング
+		,	E'\r\nコスト　：', A.コスト
+		,	E'\r\n回数　　：', A.回数
+		,	E'\r\n効果　　：', A.効果
+		)		AS 内容
+	FROM
+		TRPG_FTR.M_FTR_アクション	A
+)
