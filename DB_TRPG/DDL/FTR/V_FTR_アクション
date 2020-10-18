@@ -1,0 +1,7 @@
+DROP	VIEW TRPG_FTR.V_FTR_アクション;
+CREATE	VIEW TRPG_FTR.V_FTR_アクション AS(
+	SELECT
+		A.*
+	FROM
+		TRPG_FTR.M_FTR_アクション	A
+);
